@@ -1,0 +1,253 @@
+:root{
+    /* --colorwhite : rgb(241, 230, 230);
+    --bgcolor : rgb(41, 39, 39);
+    --navbg : rgb(27, 26, 26); */
+    --colorwhite : rgb(41, 39, 39);
+    --bgcolor : rgb(241, 230, 230);
+    --navbg : rgb(27, 26, 26);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bgcolor);
+}
+.nav img{
+    margin-left: 1.5rem;
+}
+.nav{
+    margin: 0rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.3rem;
+    border-bottom: 2.5px solid var(--colorwhite);
+    width: 95%;
+    position: fixed;
+    top: 0;
+    background-color: var(--navbg);
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 1rem;
+    transition: all 0.2s ease;
+}
+.nav ul li:hover{
+    scale: 1.2;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: var(--colorwhite);
+    position: relative;
+    font-weight: bold;
+    transition: all 2s ease;
+}
+.nav ul li a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -5px;
+    height: 1.6px;
+    width: 0%;
+    background-color: var(--colorwhite);
+    transition: all 0.8s ease;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+.nav ul li a:hover{
+    scale: 3rem;
+}
+.moon{
+    margin-right: 1.5rem;
+    height: 2.8rem;
+    width: 1.8rem;
+    transition: all 0.6s ease;
+}
+.moon:hover{
+    scale:1.2;
+    rotate: 360deg;
+    cursor: pointer;
+}
+.main{
+    margin: 6rem 25rem 0rem 25rem;
+    height: 30rem;
+}
+.main img{
+    margin-left: 9rem;
+    height: 220px;
+    width: 220px;
+    border: 1px solid var(--colorwhite);
+    border-radius: 200px;
+}
+.main .name{
+    margin-top: 2.2rem;
+    font-size: 2.7rem;
+    color: var(--colorwhite);
+    margin-left: 0.8rem;
+}
+.main .profession{
+    color: var(--colorwhite);
+    margin-left: 3.8rem;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+}
+.main .quote{
+    color: var(--colorwhite);
+    margin-left: 8rem;
+    margin-top: 0.4rem;
+}
+.main button{
+    background-color: var(--bgcolor);
+    margin-top: 2.2rem;
+    border: 1px solid var(--colorwhite);
+    border-radius: 8px;
+    margin-left: 13.5rem;
+    padding: 10px 18px;
+    transition: all 0.2s ease;
+}
+.main button:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.main button a{
+    text-decoration: none;
+    color: var(--colorwhite);
+    font-weight: 600;
+}
+.seprate{
+    margin-top: 1.4rem;
+    border: 1px solid var(--colorwhite);
+    background-color: var(--colorwhite);
+    margin-left: 16%;
+    margin-right: 16%;
+}
+.myskill {
+    margin: 2.5rem 16%;
+}
+.myskill h2{
+    margin-bottom: 2.5rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: var(--colorwhite);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.box{
+    border: 2.8px solid var(--colorwhite);
+    border-radius: 15px;
+    width: 13rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    padding: 18px;
+}
+.box:hover{
+    box-shadow: 3px 5px 8px var(--colorwhite);
+    border: 2.8px solid var(--bgcolor);
+}
+.box .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.box .up img{
+    height: 90px;
+    width: 90px;
+}
+.box .up .right p{
+    font-size: 2.2rem;
+    color: var(--colorwhite);
+}
+.project{
+    margin: 2.5rem 16%;
+}
+.project h2{
+    margin-bottom: 2.5rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: var(--colorwhite);
+}
+.content_p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pbox{
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid var(--colorwhite);
+    border-radius: 25px;
+}
+.pbox:hover{
+    box-shadow: 3px 5px 8px var(--colorwhite);
+    border: 2.8px solid var(--bgcolor);
+    cursor: pointer;
+}
+.pbox img{
+    width: 20rem;
+    height: 17rem;
+}
+.pbox p{
+    /* border: 1.4px solid var(--colorwhite);
+    border-radius: 0px 0px 25px 25px; */
+    padding-bottom: 1rem;
+}
+.pbox p span{
+    margin-left: 5rem;
+    margin-top: 0.5px;
+    font-size: 1.5rem;
+    color: var(--colorwhite);
+    font-weight: 800;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+.view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 47px;
+}
+.view a{
+    text-decoration: none;
+    color: var(--colorwhite);
+    font-weight: 700;
+    font-size: 1.18rem;
+}
+.view a:hover{
+    text-decoration: underline;
+}
+.contact{
+    margin: 2.5rem 16%;
+}
+.in_touch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in_touch h2{
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: var(--colorwhite);
+}
+.contact .na{
+    margin: 0rem 5rem;
+    font-size: large;
+    color: var(--colorwhite);
+}
+.contact .per{
+    
+}
