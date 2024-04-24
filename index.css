@@ -3,6 +3,7 @@
     --bgcolor : rgb(41, 39, 39);
     --navbg : rgb(27, 26, 26);
     --lightwhite : rgb(80, 80, 80);
+    --textcolor : rgb(241, 9, 9);
     /* --colorwhite : rgb(41, 39, 39);
     --bgcolor : rgb(196, 194, 190);
     --navbg : rgb(182, 179, 172); */
@@ -58,7 +59,7 @@ body{
     bottom: -5px;
     height: 1.6px;
     width: 0%;
-    background-color: var(--colorwhite);
+    background-color: var(--textcolor);
     transition: all 0.8s ease;
 }
 .nav ul li a:hover::after{
@@ -66,13 +67,12 @@ body{
 }
 .nav ul li a:hover{
     scale: 3rem;
+    color: var(--textcolor);
 }
 .moon{
     color: var(--colorwhite);
     font-size: 2rem;
     margin-right: 3.5rem;
-    /* height: 2.8rem;
-    width: 1.8rem; */
     transition: all 0.6s ease;
 }
 .moon:hover{
@@ -81,51 +81,92 @@ body{
     cursor: pointer;
 }
 .main{
-    margin: 6rem 25rem 0rem 25rem;
-    height: 30rem;
+    margin: 9rem 10rem 5rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-.main img{
-    margin-left: 9rem;
-    height: 220px;
-    width: 220px;
-    border: 1px solid var(--colorwhite);
+.main .mleft img{
+    height: 360px;
+    width: 360px;
+    border: 1.3px solid var(--textcolor);
     border-radius: 200px;
+    box-shadow: 4px 8px 12px var(--textcolor);
 }
-.main .name{
-    margin-top: 2.2rem;
+.main .mright .name{
     font-size: 2.7rem;
-    color: var(--colorwhite);
-    margin-left: 0.8rem;
 }
-.main .profession{
-    
-    color: var(--colorwhite);
-    margin-left: 3.8rem;
-    font-size: 1.3rem;
-    margin-top: 0.4rem;
+.shadow{
+    text-shadow: 1px 1px 2px var(--textcolor);
 }
-.main .quote{
-    color: var(--colorwhite);
-    margin-left: 8rem;
-    margin-top: 0.4rem;
+.red{
+    color: var(--textcolor);
 }
-.main button{
+.white{
+    color: var(--colorwhite);
+}
+.profession{
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    color: var(--colorwhite);
+}
+.move{
+    color: var(--textcolor);
+    font-style: italic;
+    text-decoration: underline;
+}
+.mright .quote{
+    margin: 0.3rem;
+    color: var(--colorwhite);
+    font-size: large;
+}
+.social ul{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+}
+.social ul li{
+    list-style: none;
+    margin-right: 1rem;
+}
+.social ul li a i{
+    padding: 0.3px;
+    font-size: 2.2rem;
+    color: var(--colorwhite);
+    border: 0.5px solid var(--colorwhite);
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+.social ul li a i:hover{
+    scale: 1.1;
+}
+.mright button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 0.6rem 0.9rem;
     background-color: var(--bgcolor);
-    margin-top: 2.2rem;
-    border: 2px solid var(--lightwhite);
-    border-radius: 8px;
-    margin-left: 13.5rem;
-    padding: 10px 18px;
-    transition: all 0.2s ease;
+    border: 1.7px solid var(--colorwhite);
+    border-radius: 25px;
+    transition: all 0.5s ease;
 }
-.main button:hover{
-    scale: 1.2;
+.mright button:hover{
+    scale: 1.08;
     cursor: pointer;
 }
-.main button a{
+.mright button a{
+    font-size: 1.15rem;
     text-decoration: none;
     color: var(--colorwhite);
-    font-weight: 600;
+}
+.mright button i{
+    padding-bottom: 3px;
+    margin-left: 3px;
+    font-size: 20px;
+    color: var(--colorwhite);
 }
 .seprate{
     margin-top: 1.4rem;
@@ -165,13 +206,6 @@ body{
     box-shadow: 3px 5px 8px var(--colorwhite);
     border: 2.8px solid var(--bgcolor);
 }
-
-/* #html {
-    transition: rotate 2s ease;
-}
-.box:hover #html{
-    rotate: 360deg;
-} */
 .box:hover .anime{
     animation: sc 2s ease infinite;
 }
@@ -196,20 +230,15 @@ body{
     color: var(--colorwhite);
     font-size: 4.5rem;
 }
-/* .up:hover{
-    scale: 2;
-} */
 .box .up .right p:nth-child(1){
     font-size: 2rem;
     color: var(--colorwhite);
     font-weight: 600;
 }
-
 .box .up .right p:nth-child(2) {
     font-size: 1.5rem;
     color: var(--colorwhite);
 }
-
 .project{
     margin: 2.5rem 16%;
 }
@@ -225,7 +254,7 @@ body{
     align-items: center;
 }
 .pbox{
-    width: 20rem;
+    width: 25rem;
     height: 20rem;
     border: 2px solid var(--lightwhite);
     border-radius: 25px;
@@ -236,12 +265,16 @@ body{
     cursor: pointer;
 }
 .pbox img{
-    width: 20rem;
-    height: 17rem;
+    border-radius: 10px;
+    width: 25rem;
+    height: 16rem;
+    object-fit: contain;
+}
+.pbox2{
+    padding: 0px 5px;
+    height: 16rem;
 }
 .pbox p{
-    /* border: 1.4px solid var(--colorwhite);
-    border-radius: 0px 0px 25px 25px; */
     padding-bottom: 1rem;
 }
 .pbox p span{
@@ -265,6 +298,13 @@ body{
     font-weight: 700;
     font-size: 1.18rem;
 }
+.view .arrow{
+    color: var(--colorwhite);
+    font-size: 1.8rem;
+}
+.view:hover .arrow{
+    margin-left: 0.5rem;
+}
 .view a:hover{
     text-decoration: underline;
 }
@@ -286,4 +326,58 @@ body{
     margin: 0rem 5rem;
     font-size: large;
     color: var(--colorwhite);
+}
+.contact_me{
+    margin: 2.5rem 15.5%;
+}
+.contact_me h3{
+    margin-left: 20.3rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 1.9rem;
+    color: var(--colorwhite);
+}
+.contact_me h3{
+    display: flex;
+    align-items: center;
+}
+.contact_me h3 i{
+    margin-left: 5px;
+}
+.table{
+    margin: 2.5rem 16%;
+}
+.table input{
+    padding-left: 15px;
+    margin: 0.5rem 15rem;
+    width: 30rem;
+    height: 2rem;
+    outline: none;
+    border: 2.3px solid var(--textcolor);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: medium;
+    color: var(--bgcolor);
+}
+.table button{
+    margin: 1rem 26rem;
+    padding: 8px 35px;
+    border: 2px solid var(--textcolor);
+    border-radius: 10px;
+    color: rgb(80, 77, 77);
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+.table button:hover{
+    box-shadow: 1px 3px 5px var(--colorwhite);
+    scale: 1.01;
+    cursor: pointer;
+    border-color: var(--colorwhite);
+}
+.table button i{
+    font-size: large;
+}
+footer{
+    background-color: var(--navbg);
+    height: 20rem;
 }

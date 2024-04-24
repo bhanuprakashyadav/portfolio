@@ -1,0 +1,62 @@
+
+.container:hover .text{
+    animation: animate 0.5s linear forwards alternate;
+}
+.container:hover{
+    animation: overflow 0.5s linear forwards alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.container:not(:hover) .text{
+    animation: goback 0.5s linear forwards alternate;
+}
+.container:not(:hover) {
+    animation: flowback 0.5s linear forwards alternate;
+}
+
+
+@keyframes animate {
+    0%{
+        top: 20rem;
+    }
+    50%{
+        top: 15rem;
+    }
+    100%{
+        top: 18rem;
+        z-index: 99;
+    }
+}
+@keyframes overflow {
+    0%{
+        overflow: hidden;
+    }
+    50%{
+        overflow: hidden;
+    }
+    100%{
+        overflow: initial;
+    }
+}
+@keyframes goback {
+    100%{
+        top: 20rem;
+    }
+    50%{
+        top: 15rem;
+    }
+    0%{
+        top: 18rem;
+    }
+}
+@keyframes flowback {
+    100%{
+        overflow: hidden;
+    }
+    50%{
+        overflow: hidden;
+    }
+    0%{
+        overflow: initial;
+    }
+}
