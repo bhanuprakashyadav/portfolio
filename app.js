@@ -14,10 +14,7 @@ setInterval(function typeWriter() {
 }
 , 1000)
 
-// var icon = document.getElementsByClassName(moon);
-// icon.onclick = function(){
-//     document.body.classList.toggle("light-theme");
-// }
+
 const icon = document.getElementById('icon');
 
     icon.addEventListener('click', () => {
@@ -30,5 +27,4 @@ const icon = document.getElementById('icon');
         {
             icon.src = "moon-solid-24.png";
         }
-        console.log('clicked');
     })

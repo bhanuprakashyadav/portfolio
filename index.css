@@ -90,7 +90,7 @@ body{
     scale:1.2;
     rotate: 360deg;
     cursor: pointer;
-}
+}   
 .main{
     margin: 9rem 10rem 5rem 10rem;
     display: flex;
@@ -285,6 +285,10 @@ body{
     padding: 0px 5px;
     height: 16rem;
 }
+.pbox1{
+    padding: 0px 5px;
+    height: 16rem;
+}
 .pbox p{
     padding-bottom: 1rem;
 }
@@ -390,5 +394,92 @@ body{
 }
 footer{
     background-color: var(--navbg);
-    height: 20rem;
+    padding: 3rem 20% 0rem 20%;
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer .block1{
+    width: 20rem;
+    color: var(--colorwhite);
+}
+.footer .block1 h2{
+    color: var(--colorwhite);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.footer .block1 p{
+    margin-top: 0.7rem;
+}
+.footer .block1 .ic{
+    margin-top: 1.5rem;
+}
+.footer .block1 .ic ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .block1 .ic ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.footer .block1 .ic ul li a i{
+    margin-right: 1.5rem;
+    font-size: 1.7rem;
+    color: var(--colorwhite);
+    transition: all 0.4s ease;
+}
+.footer .block1 .ic ul li a i:hover{
+    scale: 1.2;
+}
+.footer .block2{
+    margin-top: 0.7rem;
+    color: var(--colorwhite);
+}
+.footer .block2 h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.footer .block2 .fi{
+    margin-top: 0.60rem;
+    color: var(--colorwhite);
+    display: flex;
+    align-items: center;    
+}
+.footer .block2 .fi i{
+    margin-right: 0.7rem;
+    color: var(--colorwhite);
+    font-size: 1.3rem;
+}
+.footer .block3{
+    margin-top: 0.7rem;
+    color: var(--colorwhite);
+}
+.footer .block3 h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.footer .block3 ul li{
+    list-style: none;
+    margin-top: 0.7rem;
+    position: relative;
+}
+.footer .block3 ul li a{
+    text-decoration: none;
+    margin-top: 0.3rem;
+    color: var(--colorwhite);
+}
+#last{
+    font-style: italic;
+    font-size: small;
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#last a{
+    color: var(--lightwhite);
 }
