@@ -13,3 +13,22 @@ setInterval(function typeWriter() {
     }  
 }
 , 1000)
+
+// var icon = document.getElementsByClassName(moon);
+// icon.onclick = function(){
+//     document.body.classList.toggle("light-theme");
+// }
+const icon = document.getElementById('icon');
+
+    icon.addEventListener('click', () => {
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme"))
+        {
+            icon.src = "sun-solid-24.png ";
+        }
+        else
+        {
+            icon.src = "moon-solid-24.png";
+        }
+        console.log('clicked');
+    })

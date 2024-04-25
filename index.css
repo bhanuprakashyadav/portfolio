@@ -1,12 +1,23 @@
 :root{
     --colorwhite : rgb(196, 194, 190);
-    --bgcolor : rgb(41, 39, 39);
-    --navbg : rgb(27, 26, 26);
+    --bgcolor : rgb(41, 39, 39); 
+    --navbg : rgb(27, 26, 26); 
+    --boxcol : rgb(27, 26, 26);
+    --lightwhite : rgb(80, 80, 80);
+    --textcolor : rgb(238, 13, 13);
+    
+    /* --colorwhite : rgb(41, 39,39);
+    --bgcolor : rgb(196,194,190);
+    --navbg : white;
+    --boxcol : rgb(212, 212, 212); */
+}
+.light-theme{
     --lightwhite : rgb(80, 80, 80);
     --textcolor : rgb(241, 9, 9);
-    /* --colorwhite : rgb(41, 39, 39);
-    --bgcolor : rgb(196, 194, 190);
-    --navbg : rgb(182, 179, 172); */
+    --colorwhite : rgb(41, 39,39);
+    --bgcolor : rgb(196,194,190);
+    --navbg : white;
+    --boxcol : rgb(212, 212, 212);
 }
 *{
     margin: 0;
@@ -89,15 +100,15 @@ body{
 .main .mleft img{
     height: 360px;
     width: 360px;
-    border: 1.3px solid var(--textcolor);
+    border: 1.3px solid var(--lightwhite);
     border-radius: 200px;
-    box-shadow: 4px 8px 12px var(--textcolor);
+    box-shadow: 4px 8px 12px var(--lightwhite);
 }
 .main .mright .name{
     font-size: 2.7rem;
 }
 .shadow{
-    text-shadow: 1px 1px 2px var(--textcolor);
+    /* text-shadow: 1px 1px 2px var(--lightwhite); */
 }
 .red{
     color: var(--textcolor);
@@ -132,7 +143,7 @@ body{
     margin-right: 1rem;
 }
 .social ul li a i{
-    padding: 0.3px;
+    padding: 0.5px;
     font-size: 2.2rem;
     color: var(--colorwhite);
     border: 0.5px solid var(--colorwhite);
@@ -199,7 +210,7 @@ body{
     height: 5rem;
     margin-bottom: 2rem;
     padding: 18px;
-    background-color: rgb(27, 26, 26);
+    background-color: var(--boxcol);
 }
 
 .box:hover{
