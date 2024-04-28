@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --colorwhite : rgb(196, 194, 190);
     --bgcolor : rgb(41, 39, 39); 
@@ -19,9 +20,9 @@
     padding: 0;
 }
 body{
-    /* width: 100%; */
     background-color: var(--bgcolor);
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Montserrat", sans-serif;
 }
 .nav img{
     margin-left: 3.5rem;
@@ -86,7 +87,18 @@ body{
     scale:1.2;
     rotate: 360deg;
     cursor: pointer;
+}
+.menu{
+    position: absolute;
+    color: var(--colorwhite);
+    font-size: 2rem;
+    display: none;
+    opacity: 0;
+    right: 0;
 }   
+.menu:hover{
+    cursor: pointer;
+}
 .main{
     margin: 9rem 0rem 5rem 0rem;
     display: flex;
@@ -325,7 +337,6 @@ body{
 .contact{
     margin: 2.5rem 4rem;
     padding-inline: 1rem;
-    /* background-color: yellow; */
 }
 .in_touch{
     display: flex;
@@ -339,7 +350,6 @@ body{
     color: var(--colorwhite);
 }
 .contact p{
-    /* margin: 0rem 5rem; */
     max-width: 40rem;
     margin-inline: auto;
     text-align: center;
@@ -350,8 +360,6 @@ body{
     margin: 2.5rem 4rem;
 }
 .contact_me h3{
-    /* margin-left: 20.3rem; */
-    /* margin-bottom: 1rem; */
     text-align: center;
     font-weight: bolder;
     font-size: 1.9rem;
@@ -369,7 +377,6 @@ body{
 }
 .table input{
     padding-left: 15px;
-    /* margin: 0.5rem 15rem; */
     width: 30rem;
     height: 2.5rem;
     outline: none;
@@ -395,11 +402,11 @@ body{
     border-color: var(--colorwhite);
 }
 .table button i{
+    margin-right: 0.3rem;
     font-size: large;
 }
 footer{
     background-color: var(--navbg);
-    /* padding: 3rem 20% 0rem 20%; */
     padding-inline: 3rem;
     display: flex;
     flex-direction: column;
@@ -408,10 +415,9 @@ footer{
 }
 .footer{
     display: flex;
-    /* align-items: flex-start; */
     flex-wrap: wrap;
     gap: 2rem;
-    /* justify-content: space-between; */
+    margin-top: 1.2rem;
 }
 .footer .block1{
     max-width: 20rem;
@@ -509,6 +515,33 @@ footer{
     }
     .seprate{
         margin: 0rem 5.5rem;
+    }
+    .nav{
+
+        ul{
+            position: absolute;
+            width: 95%;
+            top: 4.3rem;
+            flex-direction: column;
+            text-align: center;
+            background-color: var(--boxcol);
+            padding: 1rem;
+            gap: 0;
+            margin-bottom: 2rem;
+            overflow: hidden;            
+            transition: all 0.7s ease;
+            li{
+                padding: 2rem;
+            }
+        }
+        .moon{
+            margin-right: 6rem;
+        }
+        .menu{
+            opacity: 1;
+            font-size: 2.5rem;
+            margin-right: 2rem;
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 var i = 0;
 var j =1;
-var txt = 'WEB DEVELOPER AND PROGRAMMER'; /* The text */
-var speed = 500; /* The speed/duration of the effect in milliseconds */
+var txt = 'WEB DEVELOPER AND PROGRAMMER'; 
+var speed = 500;
 const profession = document.querySelector(".move");
 
 setInterval(function typeWriter() {
@@ -28,3 +28,23 @@ const icon = document.getElementById('icon');
             icon.src = "moon-solid-24.png";
         }
     })
+
+
+    document.getElementById("menul").style.maxHeight = "0px";
+    document.getElementById("threeline").addEventListener("click", () =>{
+        if(document.getElementById("menul").style.maxHeight == "0px")
+        {
+            document.getElementById("menul").style.maxHeight = "420px";
+            document.getElementById("threeline").style.rotate = "45deg";
+        }
+        else
+        {
+            document.getElementById("menul").style.maxHeight = "0px";
+            document.getElementById("threeline").style.rotate = "0deg";
+        }
+    })
+
+    
+    
+    
+    
